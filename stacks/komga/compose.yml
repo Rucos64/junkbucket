@@ -1,0 +1,15 @@
+version: "3.3"
+services:
+  komga:
+    image: gotson/komga
+    container_name: komga
+    environment:
+      - TZ=Europe/Minsk
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - /home/max/configs/komga:/config
+      - /mnt/hdd/media/comics:/data
+    ports:
+      - 25600:25600
+    restart: unless-stopped

@@ -7,10 +7,6 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - /home/max/configs:/app/data
-      # Stacks Directory
-      # ⚠️ READ IT CAREFULLY. If you did it wrong, your data could end up writing into a WRONG PATH.
-      # ⚠️ 1. FULL path only. No relative path (MUST)
-      # ⚠️ 2. Left Stacks Path === Right Stacks Path (MUST)
       - /home/max/junkbucket/stacks:/home/max/junkbucket/stacks
     environment:
       # Tell Dockge where to find the stacks
