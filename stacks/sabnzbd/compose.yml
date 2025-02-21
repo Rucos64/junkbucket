@@ -9,7 +9,7 @@ services:
       - TZ=Europe/Minsk
     volumes:
       - /home/max/configs/sabnzbd:/config
-      - /mnt/hdd/nzb:/downloads
+      - /mnt/hdd/nzb:/mnt/hdd/nzb
     ports:
       - 8081:8080
     restart: unless-stopped
