@@ -1,0 +1,15 @@
+---
+services:
+  sabnzbd:
+    image: lscr.io/linuxserver/sabnzbd:latest
+    container_name: sabnzbd
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Minsk
+    volumes:
+      - /home/max/configs/sabnzbd:/config
+      - /mnt/hdd/nzb:/downloads
+    ports:
+      - 8081:8080
+    restart: unless-stopped
