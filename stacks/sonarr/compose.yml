@@ -9,7 +9,7 @@ services:
       - DOCKER_MODS=ghcr.io/themepark-dev/theme.park:sonarr
     volumes:
       - /home/max/configs/sonarr:/config
-      - /mnt/hdd:/data
+      - /mnt/hdd:/mnt/hdd
     ports:
       - 8989:8989
     restart: unless-stopped
