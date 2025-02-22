@@ -10,7 +10,7 @@ services:
       - DOCKER_MODS=ghcr.io/themepark-dev/theme.park:qbittorrent
     volumes:
       - /home/max/configs:/config
-      - /mnt/hdd/torrents:/data/torrents
+      - /mnt/hdd/torrents:/mnt/hdd/torrents
     ports:
       - 8080:8080
       - 6881:6881
