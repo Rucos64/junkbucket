@@ -9,7 +9,7 @@ services:
       - DOCKER_MODS=ghcr.io/themepark-dev/theme.park:radarr
     volumes:
       - /home/max/configs/radarr:/config
-      - /mnt/hdd:/data
+      - /mnt/hdd:/mnt/hdd
     ports:
       - 7878:7878
     restart: unless-stopped
