@@ -3,7 +3,7 @@ services:
     container_name: kapowarr
     image: mrcas/kapowarr:latest
     volumes:
-      - kapowarr-db:/app/db
+      - "kapowarr-db:/app/db"
       - /mnt/hdd/torrents/comics:/app/temp_downloads
       - /mnt/hdd/media/comics:/comics
     ports:
